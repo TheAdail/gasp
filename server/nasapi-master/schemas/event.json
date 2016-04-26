@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "faker": "random.uuid"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "event" : {
+      "enum": [
+        "coughing",
+        "itchy-eyes",
+        "nasal-obstruction",
+        "shortness-of-breath",
+        "sneezing",
+        "wheezing"
+      ]
+    },
+    "rating": {
+      "type": "number"
+    },
+    "timeStamp": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "longitude", "latitude"
+  ]
+}

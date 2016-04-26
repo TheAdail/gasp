@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "faker": "random.uuid"
+    },
+    "longitude": {
+      "type": "number",
+      "minimum": 150,
+      "maximum": 152,
+      "exclusiveMinimum": false,
+      "exclusiveMaximum": false
+    },
+    "latitude": {
+      "type": "number",
+      "minimum": 33,
+      "maximum": 35,
+      "exclusiveMinimum": false,
+      "exclusiveMaximum": false
+    },
+    "event" : {
+      "enum": [
+        "humidity",
+        "dust",
+        "smoke",
+        "fire",
+        "allergy"
+      ]
+    },
+    "rating": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4,
+      "exclusiveMinimum": false,
+      "exclusiveMaximum": false
+    },
+    "timeStamp": {
+      "type": "string",
+      "faker": {
+        "fake": "{{date.recent}}"
+      }
+    }
+  },
+  "required": [
+    "longitude","latitude", "timeStamp", "rating", "type", "id", "event"
+  ]
+}
