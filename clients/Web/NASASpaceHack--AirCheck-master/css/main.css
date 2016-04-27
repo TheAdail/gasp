@@ -1,0 +1,93 @@
+.container {
+ background-color: #575151;
+}
+.header-data{
+	padding:none;
+	margin:none;
+}
+.main-heading {
+	font-size: 2.5em;
+	font-family: serif;
+	font-style: oblique;
+	color: rgb(173, 173, 160);
+}
+.sub-heading {
+  line-height: 0em;
+  padding-bottom: 1em;
+  margin-right: -8em;
+  font-style: oblique;
+  font-family: serif;
+  color: darkgrey;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.map-container {
+	width:100%;
+	height: 80%;
+	padding-top: 1em;
+}
+
+.marker {
+  height: 2.5em;
+  width: 2.5em;
+	transform: translate(-10px, -20px);
+}
+
+input[type=radio] {
+	-webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  margin-top: -0.4em;
+}
+
+label {
+	color:white;
+  font-style: italic;
+}
+
+.symptom-hazard-radio > label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+.symptom-hazard-radio > label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+.symptom-hazard-radio > label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
+
+#fixed-button{
+	position: fixed;
+	z-index: 1000;
+	bottom:2em;
+	right: 3em;
+	background-color: transparent; /* #76ab92 */
+	border:none;
+	outline:#76ab92 ;
+}
+
+.modal-backdrop {
+	opacity: 0.8 !important;
+	background-color: transparentize(#777777, 0.27);
+	z-index: 1030;
+}
+
+.modal-transparent {
+	background: transparent;
+	color: white;
+}
+
+.modal-transparent .modal-content {
+  background: transparent;
+}
+
+.modal-backdrop.modal-backdrop-transparent {
+  background: #fff;
+}
+
+.modal-backdrop.modal-backdrop-transparent.in {
+  opacity: .9;
+  filter: alpha(opacity=90);
+}
