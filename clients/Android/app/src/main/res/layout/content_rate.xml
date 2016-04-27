@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.genesis.aircheck.RateActivity"
+    tools:showIn="@layout/activity_rate">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView3" />
+
+    <LinearLayout
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:text="Mild"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/a"
+        android:gravity="center_horizontal"
+        android:layout_weight="33"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt1" />
+
+    <Button
+        android:text="Medium"
+
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/b"
+        android:gravity="center_horizontal"
+        android:layout_weight="33"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt2" />
+
+    <Button
+        android:text="Severe"
+
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/c"
+        android:gravity="center_horizontal"
+        android:layout_weight="33"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt3" />
+    </LinearLayout>
+    <Button
+        android:text="Submit"
+
+        android:background="@android:color/transparent"
+
+        android:gravity="center_horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit" />
+</LinearLayout>
